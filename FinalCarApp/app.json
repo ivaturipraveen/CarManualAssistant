@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "CarApp",
+    "slug": "carapp",
+    "version": "1.0.0",
+    "sdkVersion": "51.0.0",
+    "entryPoint": "./App.js",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "This app requires access to your photo library to upload a profile picture.",
+        "NSCameraUsageDescription": "This app requires access to your camera to take a profile picture.",
+        "NSPhotoLibraryAddUsageDescription": "This app requires permission to save photos to your library.",
+        "NSDocumentTypeUsageDescription": "This app requires access to your document library to upload files."
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "MANAGE_EXTERNAL_STORAGE" 
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
